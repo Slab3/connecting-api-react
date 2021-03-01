@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+table {
+  width: 80%;
+  margin: 2% auto 0;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+}
+
+td:nth-child(1) {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.tb_head {
+  font-size: 22px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid black;
+}
