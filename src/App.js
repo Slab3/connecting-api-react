@@ -19,8 +19,7 @@ function App() {
         <table>
           <thead>
           <tr>
-            <th className="tb_head">Site</th>
-            <th className="tb_head">Data</th>
+            <th className="tb-head">Get 3 API</th>
           </tr>
           </thead>
 
@@ -28,8 +27,10 @@ function App() {
           {
               links.map((url, i) => {
               return <tr key={i}>
-                <td>{url}</td>
-                <td><pre>{JSON.stringify(data[i], null, 2)}</pre></td>
+                <td>
+                    <b className="site-name">Site: {url}</b> <hr/>
+                    <pre>{JSON.stringify(data[i], null, 2)}</pre>
+                </td>
               </tr>
             })
           }
